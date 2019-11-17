@@ -46,7 +46,7 @@ public class LoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
-		
+		System.out.println("Executing doPost");
 		String action = request.getParameter("action");
 		
 		if(action.equals("signup"))
