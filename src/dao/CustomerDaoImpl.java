@@ -281,6 +281,7 @@ public class CustomerDaoImpl implements CustomerDao {
 	
 	public ArrayList<FDetailsDisplay> getFlightsThreeStop(String from, String to, LocalDate date, int nopass)
 	{
+		System.out.println("Executing getFlightsThreeStop function");
 		ArrayList<FDetailsDisplay> list = new ArrayList<FDetailsDisplay>();
 		
 		String query = "select s1.Id , s2.Id , s3.Id , s4.Id , s5.Id , s6.Id , s7.Id , s8.Id , a1.Name , a2.Name , a3.Name , a4.Name"
